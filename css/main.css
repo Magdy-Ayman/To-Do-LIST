@@ -1,0 +1,96 @@
+body {
+    /* background-color: rgba(65, 65, 65, 0.968); */
+   
+    background-image: url(/img/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ 
+
+}
+
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header .container .row h1 {
+    color: white;
+
+}
+
+.white {
+    color: white;
+    margin-left: 20px;
+}
+
+.tasksword {
+    color: white;
+    margin: 20px 0px 20px 250px;
+
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.535);
+    padding-left: 10px;
+}
+
+input {
+    margin-right: 10px;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    padding: 5px 0px;
+    /* background-color: rgba(122, 115, 115, 0.9); */
+    background-color: rgba(47, 96, 128, 0.606);
+
+    border: none;
+    margin-bottom: 10px;
+
+
+}
+
+.white {
+    padding-left: 10px;
+}
+
+#task-submit {
+    color: white;
+    width: 70px;
+    border-radius: 10px;
+    background-color: rgba(47, 96, 128, 0.606);
+    /* border: 1px solid white; */
+    border: none;
+}
+
+.text-center {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Update{
+    display: none;
+    border-radius: 5px;
+    width: 70px;
+    margin-bottom: 4px;
+    border: none;
+    background-color: rgba(102, 177, 228, 0.606);  
+}
+.text-center button {
+    border-radius: 5px;
+    width: 70px;
+    margin-bottom: 4px;
+    border: none;
+    background-color: rgba(102, 177, 228, 0.606);
+}
+
+button:hover {
+    background-color: rgba(47, 96, 128, 0.606);
+    border: 2px solid white;
+}

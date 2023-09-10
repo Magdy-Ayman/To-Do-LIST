@@ -1,0 +1,39 @@
+let taskinput = document.querySelector('#task-text')
+let button = document.querySelector('#task-submit')
+let showtasks = document.querySelector('#tasks')
+
+let AllTasks = [];
+
+let renderTask = () => {
+    let newTask = {
+        // why will we use object here? u will know in the future 
+        task: taskinput.value,
+    };
+    AllTasks.push(newTask)
+    taskinput.value = '' ;
+    showAllTasks()
+};
+let showAllTasks = () => {
+    showtasks.innerHTML = ''
+    AllTasks.forEach((element,index) =>  {
+        showtasks.innerHTML +=  `  <div class="row">
+        <input type="text" value="${element.task}" readonly class="white">
+        <div class="text-center">
+            <button class="btn-edit ">Edit</button>
+            <button class="btn-delete">delete</button>
+        </div>
+    </div>` 
+    });
+    
+};
+console.log(AllTasks)
+
+
+
+
+
+
+
+
+
+button.addEventListener('click', renderTask)
