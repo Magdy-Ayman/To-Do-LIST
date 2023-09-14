@@ -1,96 +1,148 @@
 body {
-    /* background-color: rgba(65, 65, 65, 0.968); */
-   
-    background-image: url(/img/8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
- 
-
+  background-color: rgba(7, 51, 139, 0.896);
+  /* background-image: url('../img/8.jpg'); */
+  /* background-repeat: no-repeat;
+    background-size: fixed;
+    background-position: center center;
+    min-height: 100vh; */
+    /* height: 2000px; */
 }
-
-
-
+#scroller {
+  background-color: rgb(33, 72, 151);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: none;
+}
+/* #scroller i:hover {
+  color: white;
+  transform: rotate(360deg);
+} */
 
 .row {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .header .container .row h1 {
-    color: white;
-
+  color: white;
 }
 
-.white {
-    color: white;
-    margin-left: 20px;
+.task-text {
+  padding-left: 10px;
+}
+
+.InptHV {
+  color: white;
+  margin-left: 20px;
+  padding-left: 10px;
 }
 
 .tasksword {
-    color: white;
-    margin: 20px 0px 20px 250px;
-
+  color: white;
+  margin: 20px 0px 20px 250px;
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.535);
-    padding-left: 10px;
+  color: rgba(255, 255, 255, 0.535);
+  padding-left: 10px;
 }
 
-input {
-    margin-right: 10px;
-    color: white;
-    width: 50%;
-    border-radius: 10px;
-    padding: 5px 0px;
-    /* background-color: rgba(122, 115, 115, 0.9); */
-    background-color: rgba(47, 96, 128, 0.606);
+#task-text {
+  margin-right: 10px;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px 10px;
 
-    border: none;
-    margin-bottom: 10px;
-
-
+  background-color: rgba(122, 115, 115, 0.9);
+  background-color: rgba(47, 96, 128, 0.606);
+  border: none;
+  margin-bottom: 20px;
 }
 
-.white {
-    padding-left: 10px;
+.InptHV {
+  margin-right: 10px;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+  padding: 25px 10px;
+  background-color: rgba(122, 115, 115, 0.9);
+  background-color: rgba(47, 96, 128, 0.606);
+  border: none;
+  margin-bottom: 20px;
 }
 
 #task-submit {
-    color: white;
-    width: 70px;
-    border-radius: 10px;
-    background-color: rgba(47, 96, 128, 0.606);
-    /* border: 1px solid white; */
-    border: none;
+  text-align: center;
+  color: white;
+  width: 70px;
+  height: fit-content;
+  padding: 10px 0px;
+  border-radius: 10px;
+  background-color: rgba(47, 96, 128, 0.606);
+  /* border: 1px solid white; */
+  border: none;
 }
 
-.text-center {
+#task-submit:hover {
+  background-color: rgb(147, 63, 113);
+  color: black;
+  border: 3px solid white;
+}
+
+/* .text-center {
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+} */
+
+.Update {
+  padding: 7px;
+  color: white;
+  display: none;
+  border-radius: 5px;
+  width: 80%;
+  font-weight: bold;
+  margin-bottom: 4px;
+  border: none;
+  padding: 2px;
+  background-color: rgb(58, 59, 107);
+
+  /* background-color: rgba(102, 177, 228, 0.606);   */
 }
 
-.Update{
-    display: none;
-    border-radius: 5px;
-    width: 70px;
-    margin-bottom: 4px;
-    border: none;
-    background-color: rgba(102, 177, 228, 0.606);  
-}
-.text-center button {
-    border-radius: 5px;
-    width: 70px;
-    margin-bottom: 4px;
-    border: none;
-    background-color: rgba(102, 177, 228, 0.606);
+.text-center button.btn-edit {
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 90%;
+  height: fit-content;
+  margin-bottom: 4px;
+  border: none;
+  background-color: rgba(26, 145, 225, 0.872);
 }
 
-button:hover {
-    background-color: rgba(47, 96, 128, 0.606);
-    border: 2px solid white;
+.text-center button.btn-delete {
+  padding: 7px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 90%;
+  margin-bottom: 4px;
+  border: none;
+  background-color: rgba(102, 177, 228, 0.606);
+}
+button.btn-edit:hover,
+button.btn-delete:hover,
+.Update:hover {
+  background-color: rgb(147, 63, 113);
+  color: black;
+  border: 3px solid white;
 }

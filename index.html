@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
 
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="layout">
-
-
-        <header class="header">
-            <div class="container">
-                <div class="row">
-                    <h1>To-Do List</h1>
-                </div>
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <h1>
+              <span id="timeToDo">To-</span>
+              <span id="timeToDo">Do </span>
+              <span id="timeToDo">List</span>
+            </h1>
+          </div>
+          <button id="scroller">
+            <i class="fa-solid fa-arrow-up" style="color: #141415"></i>
+          </button>
+        </div>
+        <div class="row">
+          <input
+            type="text"
+            placeholder="What Do U Think About?"
+            id="task-text"
+          />
+          <button type="submit" name="submit" value="add" id="task-submit">
+            submit
+          </button>
+        </div>
+      </header>
+      <section class="container">
+        <h2 class="tasksword">Tasks:</h2>
+        <!-- <button id="DAll-Tasks">Delete all Taks </button> -->
+        <div id="tasks">
+          <div class="row">
+            <input
+              type="text"
+              value="magdy"
+              readonly
+              class="InptHV"
+              id="in-up-btn"
+            />
+            <div class="text-center">
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">delete</button>
             </div>
-            <div class="row">
-                <input type="text" placeholder="What Do U Think About?" id="task-text">
-                <button type="submit" name="submit" value="add" id="task-submit">submit</button>
-    
-    
-            </div>
-        </header>
-        <section class="container">
-            <h2 class="tasksword">Tasks:</h2>
-            <div id="tasks">
-                <div class="row">
-                    <input type="text" value="magdy" readonly class="white">
-                    <div class="text-center">
-                        <button class="Update ">Update</button>
-                        <button class="btn-edit ">Edit</button>
-                        <button class="btn-delete">delete</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
+          </div>
+        </div>
+      </section>
     </div>
-    
-
-
-
-
-
 
     <script src="./js/app.js"></script>
-
-</body>
-
+  </body>
 </html>

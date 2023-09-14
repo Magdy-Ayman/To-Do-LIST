@@ -37,3 +37,32 @@ console.log(AllTasks)
 
 
 button.addEventListener('click', renderTask)
+
+
+
+
+
+
+
+
+let EditTask = (index) => {
+    let TaskInput = document.querySelectorAll('#tasks input')
+    let TaskBtn = document.querySelectorAll('.btn-edit')
+
+    TaskInput[index].removeAttribute('readonly')
+    TaskBtn[index].innerText = 'Update'
+    TaskBtn[index].setAttribute('onclick', `Updatetask(${index})`)
+    TaskBtn.classList.replace('btn-edit', 'Update')
+}
+let Updatetask  = (index) => {
+    let TaskInput = document.querySelectorAll('#tasks input')
+    let EditBtn = document.querySelector('.Update')
+    TaskInput[index].setAttribute('readonly','readonly')
+    AllTasks[index] = TaskInput[index].value
+    EditBtn.setAttribute('onclick', `EditTask(${index})`)
+    EditBtn[index].innerText = 'Edit'
+    EditBtn.classList.replace('Update','btn-edit')
+    ShowAllTasks()
+
+
+}
